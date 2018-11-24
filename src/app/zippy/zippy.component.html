@@ -1,0 +1,10 @@
+<div class="card" (click)="onClick()" style="cursor: pointer;">
+    <div class="card-header">
+        {{ title }}
+        <i  class="fa float-right fa-chevron-up" 
+            [ngClass]="{'fa-chevron-up': isDetailsShown, 'fa-chevron-down': !isDetailsShown }"></i>
+    </div>
+    <div class="card-body" *ngIf="isDetailsShown">
+        <ng-content></ng-content>
+    </div>
+</div>

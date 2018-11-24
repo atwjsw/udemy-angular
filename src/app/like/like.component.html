@@ -1,0 +1,9 @@
+<!-- <i class="fa fa-heart" style="color:#ccc"></i> {{ totalLikes }} -->
+<!-- <i class="fa fa-heart" style="color: deeppink"></i> -->
+
+<i  class="fa fa-heart" 
+    [ngStyle]="{'color': isActive ? 'deeppink' : '#ccc'}"
+    style ="cursor: pointer"
+    (click)="onClick()"
+></i> 
+{{ likesCount }}

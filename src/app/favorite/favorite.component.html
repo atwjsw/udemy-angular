@@ -1,0 +1,7 @@
+<!-- <i *ngIf="isFavorite" class="fa fa-star" (click)="onClick()"></i>
+<i *ngIf="!isFavorite" class="fa fa-star-o" (click)="onClick()"></i> -->
+
+<i  class="fa" 
+    [class.fa-star]="isFavorite" 
+    [class.fa-star-o]="!isFavorite" 
+    (click)="onClick()"></i>
